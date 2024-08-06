@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"context"
-	"github.com/NxStatic/NxStaticSounds"
+	"github.com/NxStatic/NxStaticSounds/application"
 )
 
 func main() {
