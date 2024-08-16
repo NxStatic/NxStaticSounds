@@ -2,14 +2,13 @@ package model
 
 import (
 	"time"
-
-	"github.com/google/uuid"
 )
 
 type Sound struct {
-	SoundID uuid.UUID
+	ID int32
 	Name string
 	Creator string
 	Genre string
 	Duration *time.Time
+	Sound_URL string
 }
