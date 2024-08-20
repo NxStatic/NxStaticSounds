@@ -1,3 +1,0 @@
-// Creating a docker container postgres instance
-docker run -d -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_USER=user -e POSTGRES_PASSWORD=2235Tuzo -e POSTGRES_DB=NxStaticDB -p 5432:5432 --name NxStatic postgres:latest 
-0e180d693194afb2f829824229d1cd6d236916df8ceb840b2650c7f0d0fb33e7

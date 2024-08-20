@@ -9,13 +9,15 @@ export default function Landing() {
       <div className="w-full bg-black text-white">
         <div className="max-w-[1480px] m-auto flex flex-col items-center">
           <img src={hero} alt="Image" />
-          <p className="text-2xl text-center p-4">
+          <p className="text-2xl font-medium text-center p-4">
             Browse through hundreds of our curated sounds with your new sample
             library. It starts with NxStatic.
           </p>
-          <button className="px-4 py-2 rounded bg-red-500 hover:bg-red-600 text-white font-bold p-4 w-1/8 m-2">
-            <NavLink to="/signup">Sign Up for Free</NavLink>
-          </button>
+          <NavLink to="/signup">
+            <button className="px-4 py-2 rounded bg-red-500 hover:bg-red-600 text-white font-bold p-4 w-1/8 m-2">
+              Sign Up for Free
+            </button>
+          </NavLink>
         </div>
       </div>
       <div className="w-full bg-black text-white grid grid-cols-2 pt-10 pb-10">
@@ -28,9 +30,11 @@ export default function Landing() {
             Browse through our personally selected collection of sounds. Don't
             be shy, take a peek.
           </p>
-          <button className="px-4 py-2 rounded bg-red-500 hover:bg-red-600 text-white font-bold w-1/8">
-            <NavLink to="/sounds">Search Sounds</NavLink>
-          </button>
+          <NavLink to="/sounds">
+            <button className="px-4 py-2 rounded bg-red-500 hover:bg-red-600 text-white font-bold w-1/8">
+              Search Sounds
+            </button>
+          </NavLink>
         </div>
         <div className="max-w-[1480px] m-auto">
           <img src={head} alt="Image" />

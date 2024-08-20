@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-[80px] bg-black p-6">
-      <div className="md:max-w-[1480px] max-w-[800px] m-auto w-full h-full flex justify-between items-center">
+      <div className=" w-full h-full flex justify-between items-center">
         <div className="hidden md:flex items-center content-center">
           <ul className="flex gap-8">
             <li>
@@ -24,20 +24,26 @@ const Navbar = () => {
             <li className="font-bold text-md text-gray-400 hover:text-white">
               <NavLink to="/sounds">Sounds</NavLink>
             </li>
+            {/* <li className="font-bold text-md text-gray-400 hover:text-white">
+              <NavLink to="/library">Library</NavLink>
+            </li> */}
           </ul>
         </div>
 
-        <div className="hidden md:flex text-md font-bold">
-          <button className="flex justify-between items-center text-gray-400 hover:text-white bg-transparent px-6 gap-2">
-            <img src={lock} alt="lock icon" className="h-[20px]" />
-            <NavLink to="/login">Login</NavLink>
-          </button>
-          <button className="px-6 py-2 rounded bg-white hover:bg-slate-200 text-black font-bold">
-            <NavLink to="/signup">Sign Up</NavLink>
-          </button>
+        <div className="hidden md:flex text-md font-bold gap-2">
+          <NavLink to="/login"> 
+            <button className="px-6 py-2 rounded text-gray-400 hover:text-white hover:border border:bg-white bg-transparent">
+              Login 
+            </button>
+          </NavLink>
+          <NavLink to="/signup">
+            <button className="px-6 py-2 rounded bg-white hover:bg-slate-200 text-black font-bold">
+              Sign Up
+            </button>
+          </NavLink>
         </div>
 
-        <div className="md:hidden object-left" onClick={handleClick}>
+        <div className="md:hidden" onClick={handleClick}>
           <img src={toggle ? close : menu} alt="menu" />
         </div>
       </div>
@@ -58,7 +64,6 @@ const Navbar = () => {
           </NavLink>
           <div className="flex flex-col my-4 gap-4">
             <button className="border border-black flex justify-center items-center bg-transparent px-6 gap-2 py-4 rounded">
-              <img src={lock} alt="lock icon" className="h-[20px]" />
               <NavLink to="/login">Login</NavLink>
             </button>
             <button className="px-8 py-5 rounded bg-black text-white font-bold">
