@@ -1,2 +1,10 @@
 # NxStatic Sounds
-This is my attempt in creating a sounds library.
+
+## Project Overview
+NxStatic Sounds is my attempt in creating a sounds library from scratch. 
+
+## Technical Challenges 
+
+## Solutions Implemented
+
+## Technologies Used
